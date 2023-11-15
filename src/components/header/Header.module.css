@@ -1,0 +1,83 @@
+.header {
+  max-width: 102rem;
+  width: 100;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 1.5rem;
+}
+
+.logo img {
+  width: 8rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 3.375rem;
+}
+
+nav ul li a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-transform: capitalize;
+  color: #1B2336;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: #2AAA94;
+}
+
+.iconShop {
+  position: relative;
+}
+
+.iconShop span {
+  position: absolute;
+  background: #2AAA94;
+  color: #fff;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  top: -0.5rem;
+  right: -0.5rem;
+
+}
+
+.registerOrLogin {
+  display: flex;
+  align-items: center;
+  gap: 2.4375rem;
+}
+
+.login {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration-line: underline;
+  color: #4A4A4A;
+}
+
+.register {
+  width: 8.625rem;
+  height: 3.75rem;
+  border-radius: 10px;
+  background: linear-gradient(102deg, #083F9B 0%, #7F56D9 93.39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  line-height: 22px;
+  color: #fff;
+}
