@@ -13,9 +13,15 @@ export function Header() {
 
       <nav>
         <ul>
-          <li><NavLink href="#">Home</NavLink></li>
-          <li><NavLink href="#">Blog</NavLink></li>
-          <li><NavLink href="#">Shop</NavLink></li>
+          <li>
+            <NavLink href="#">Home</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Blog</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Shop</NavLink>
+          </li>
         </ul>
       </nav>
 
@@ -25,8 +31,12 @@ export function Header() {
       </div>
 
       <div className={styles.registerOrLogin}>
-        <NavLink className={styles.login} href="#">Login</NavLink>
-        <NavLink className={styles.register} href="#">Cadastrar</NavLink>
+        <NavLink className={styles.login} href="#">
+          Login
+        </NavLink>
+        <NavLink className={styles.register} href="#">
+          Cadastrar
+        </NavLink>
       </div>
     </header>
   )
