@@ -7,8 +7,13 @@
 }
 
 .cardCourses img {
-  width: 100%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  margin: 0 auto;
   border-radius: 20px;
+
+  display: block;
 }
 
 .cardCourses h3 {
@@ -18,6 +23,16 @@
   margin-top: 1.25rem;
   color: #324361;
   letter-spacing: -0.75px;
+}
+
+.cardCourses a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 20px;
+  color: #2AAA94;
+  text-decoration: none;
+  margin-top: 1.25rem;
+  display: block;
 }
 
 .price {
@@ -50,3 +65,4 @@
    gap: 0.5rem;
    cursor: pointer;
 }
+

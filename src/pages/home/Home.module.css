@@ -1,9 +1,13 @@
+.home {
+  padding-bottom: 4rem;
+}
+
 .banner {
   background: linear-gradient(257deg, rgba(4, 1, 108, 0.80) 0.69%, rgba(74, 22, 189, 0.80) 100%);
 }
 
 .container {
-  max-width: 90rem;
+  max-width: 95rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -109,6 +113,6 @@
 
 .wrapperCourses {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.875rem;
 }

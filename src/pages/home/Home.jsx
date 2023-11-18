@@ -1,12 +1,24 @@
-import { NavLink } from 'react-router-dom'
 import styles from './Home.module.css'
-
 import teenageWoman from '../../assets/teenage-woman.svg'
-import { CardCourses } from './components/CardCourses/CardCourses'
-
-import { DATABASE } from '../../database/DATABASE'
-
+import { CardCourses } from './components/cardCourses/CardCourses'
+import { Testimonials } from './components/testimonials/Testimonials'
+import { api } from '../../lib/axios'
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 export function Home() {
+  const [courses, setCourses] = useState([])
+
+  async function getCourses() {
+    const response = await api.get('/courses')
+    setCourses(response.data)
+  }
+
+  console.log(courses)
+
+  useEffect(() => {
+    getCourses()
+  }, [])
+
   return (
     <div className={styles.home}>
       <main>
@@ -20,7 +32,7 @@ export function Home() {
               </h1>
 
               <div className={styles.wrapper}>
-                <NavLink>View Courses</NavLink>
+                <Link>View Courses</Link>
                 <strong>Get Free Consultation</strong>
               </div>
             </div>
@@ -45,18 +57,21 @@ export function Home() {
           </p>
 
           <div className={styles.wrapperCourses}>
-            {DATABASE.map((course) => {
+            {courses.map((course) => {
               return (
                 <CardCourses
                   key={course.id}
-                  img={course.img}
+                  img={course.image}
                   title={course.title}
                   price={course.price}
+                  course={course}
                 />
               )
             })}
           </div>
         </div>
+
+        <Testimonials />
       </main>
     </div>
   )

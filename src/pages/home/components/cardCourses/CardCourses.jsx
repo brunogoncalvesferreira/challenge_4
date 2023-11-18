@@ -1,8 +1,9 @@
 import styles from './CardCourses.module.css'
 
 import { ShoppingCart } from 'phosphor-react'
+import { Link } from 'react-router-dom'
 
-export function CardCourses({ img, title, price }) {
+export function CardCourses({ img, title, price, course }) {
   return (
     <div className={styles.cardCourses}>
       <img src={img} alt={title} />
@@ -15,6 +16,7 @@ export function CardCourses({ img, title, price }) {
           Comprar
         </button>
       </div>
+      <Link to={`/cursos/${course.id}`}>Ver mais</Link>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import styles from './Header.module.css'
 
 import logo from '../../assets/codi-logo.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { ShoppingCartSimple } from 'phosphor-react'
 
 export function Header() {
@@ -14,13 +14,13 @@ export function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink href="#">Home</NavLink>
+            <Link to={'/'}>Home</Link>
           </li>
           <li>
-            <NavLink href="#">Blog</NavLink>
+            <Link to={''}>Blog</Link>
           </li>
           <li>
-            <NavLink href="#">Shop</NavLink>
+            <Link to={''}>Shop</Link>
           </li>
         </ul>
       </nav>
