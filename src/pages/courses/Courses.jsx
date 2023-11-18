@@ -16,9 +16,6 @@ export function Courses() {
     getCourseById()
   }, [id])
 
-  console.log(courses.image)
-
-  console.log(courses)
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
