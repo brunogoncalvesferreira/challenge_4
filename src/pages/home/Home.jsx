@@ -1,10 +1,11 @@
 import styles from './Home.module.css'
-import teenageWoman from '../../assets/teenage-woman.svg'
+import { useEffect, useState } from 'react'
 import { CardCourses } from './components/cardCourses/CardCourses'
 import { Testimonials } from './components/testimonials/Testimonials'
 import { api } from '../../lib/axios'
-import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+
+import teenageWoman from '../../assets/teenage-woman.svg'
 export function Home() {
   const [courses, setCourses] = useState([])
 
@@ -32,7 +33,7 @@ export function Home() {
               </h1>
 
               <div className={styles.wrapper}>
-                <Link>View Courses</Link>
+                <Link to={'/cursos'}>View Courses</Link>
                 <strong>Get Free Consultation</strong>
               </div>
             </div>

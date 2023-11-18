@@ -11,3 +11,4 @@ As tecnologias abaixo usadas no projeto
 - React Router Dom
 - Phosphor icons
 - CSS Modules
+- JSON-Server
