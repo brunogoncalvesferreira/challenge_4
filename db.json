@@ -47,6 +47,45 @@
       "description":
         "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991",
       "price": 499.99
+    },
+    {
+      "id": 6,
+      "image": "/src/assets/go.svg",
+      "title": "Curso de Go",
+      "description":
+        "Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e focada em produtividade e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno. ;)"
+      ,
+      "price": 599.99
+
+    },
+    {
+      "id": 7,
+      "image": "/src/assets/php.svg",
+      "title": "Curso de PHP",
+      "description": "PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.",
+      "price": 699.99
+    },
+    {
+      "id": 8,
+      "image": "/src/assets/typescript.svg",
+      "title": "Curso de TypeScript",
+      "description": "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
+      "price": 799.99
+    },
+    {
+      "id": 9,
+      "image": "/src/assets/java.svg",
+      "title": "Curso de Java",
+      "description": "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.",
+      "price": 899.99
+    },
+    {
+      "id": 10,
+      "image": "/src/assets/ruby.svg",
+      "title": "Curso de Ruby",
+      "description": "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro Matz Matsumoto, para ser usada como linguagem de script.",
+      "price": 999.99
+
     }
   ]
 }
