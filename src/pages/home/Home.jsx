@@ -14,8 +14,6 @@ export function Home() {
     setCourses(response.data)
   }
 
-  console.log(courses)
-
   useEffect(() => {
     getCourses()
   }, [])
