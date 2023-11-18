@@ -5,6 +5,7 @@
   padding: 0 1.5rem 4rem;
 }
 
+
 .container h2 {
   text-align: left;
   font-size: 2.8125rem;
@@ -60,6 +61,16 @@
   }
 
   .container h2 {
+    text-align: center;
+  }
+
+  .content h3, .content p {
+    text-align: center;
+  } 
+
+  .content a {
+    display: block;
+    margin-inline: auto ;
     text-align: center;
   }
 }
