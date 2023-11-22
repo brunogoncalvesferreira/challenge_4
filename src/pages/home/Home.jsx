@@ -17,7 +17,7 @@ export function Home() {
 
   useEffect(() => {
     getCourses()
-  }, [])
+  }, [courses])
 
   return (
     <div className={styles.home}>
