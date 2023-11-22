@@ -8,7 +8,7 @@ import { DATABASE } from '../../database/DATABASE'
 
 import teenageWoman from '../../assets/teenage-woman.svg'
 export function Home() {
-  const [courses, setCourses] = useState([])
+  /* const [courses, setCourses] = useState([])
 
   async function getCourses() {
     const response = await api.get('/courses')
@@ -17,7 +17,7 @@ export function Home() {
 
   useEffect(() => {
     getCourses()
-  }, [courses])
+  }, [courses]) */
 
   return (
     <div className={styles.home}>
