@@ -4,6 +4,7 @@ import { CardCourses } from './components/cardCourses/CardCourses'
 import { Testimonials } from './components/testimonials/Testimonials'
 import { api } from '../../lib/axios'
 import { Link } from 'react-router-dom'
+import { DATABASE } from '../../database/DATABASE'
 
 import teenageWoman from '../../assets/teenage-woman.svg'
 export function Home() {
@@ -56,7 +57,7 @@ export function Home() {
           </p>
 
           <div className={styles.wrapperCourses}>
-            {courses.map((course) => {
+            {DATABASE.map((course) => {
               return (
                 <CardCourses
                   key={course.id}

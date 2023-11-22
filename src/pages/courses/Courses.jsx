@@ -1,20 +1,30 @@
 import { useParams, Link } from 'react-router-dom'
 import styles from './Courses.module.css'
 import { useEffect, useState, Suspense } from 'react'
-import { api } from '../../lib/axios'
+import { DATABASE } from '../../database/DATABASE'
 
 export function Courses() {
   const { id } = useParams()
-  const [courses, setCourses] = useState([])
+  const [courses, setCourses] = useState({})
+
+  function getCourseById() {
+    DATABASE.map((course) => {
+      return course.id === Number(id) && setCourses(course)
+    })
+  }
 
   useEffect(() => {
+    getCourseById()
+  })
+
+  /* useEffect(() => {
     async function getCourseById() {
       const response = await api.get(`/courses/${id}`)
       setCourses(response.data)
     }
 
     getCourseById()
-  }, [id])
+  }, [id]) */
 
   return (
     <div className={styles.container}>
